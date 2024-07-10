@@ -5,7 +5,7 @@ from todo.models import Task
 
 
 # Create your views here.
-def index(request): 
+def index(request):
     if request.method == "POST":
         task = Task(title=request.POST["title"],
                     due_at=make_aware(parse_datetime(request.POST["due_at"])))
