@@ -1,5 +1,5 @@
 from django.test import TestCase, Client
-from django.utils import timezone 
+from django.utils import timezone
 from datetime import datetime
 from todo.models import Task
 
